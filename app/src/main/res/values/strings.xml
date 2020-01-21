@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Currency List Test</string>
+    <string name="revolut_api_endpoint">https://revolut.duckdns.org/latest</string>
+
+    <string name="title_rates">Rates</string>
 </resources>
