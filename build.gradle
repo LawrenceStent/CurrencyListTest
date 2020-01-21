@@ -10,6 +10,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -19,8 +20,21 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://jitpack.io' }
     }
+}
+
+ext {
+    androidXLibVersion = "1.1.0"
+    androidXLifecycleVersion = "2.1.0"
+
+    androidXRoomVersion = "2.2.2"
+    archLifecycleVersion = "1.1.1"
+
+    retrofitVersion = "2.4.0"
+    okHttpVersion = "3.11.0"
+
+    kodeinVersion = "5.0.0"
 }
 
 task clean(type: Delete) {
